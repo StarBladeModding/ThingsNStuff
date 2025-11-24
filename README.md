@@ -1,2 +1,2 @@
 # ThingsNStuff
-Team Fr8 Train’s first mod
+I will request that you ask before taking code, but you don't have to.
