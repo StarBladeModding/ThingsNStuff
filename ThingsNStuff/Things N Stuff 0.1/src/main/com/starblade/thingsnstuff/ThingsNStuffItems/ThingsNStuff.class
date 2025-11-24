@@ -1,8 +1,8 @@
-public class ThingsNStuffItems {
+public class ThingsNStuff {
     //Declares Wooden Boomerang Item
     public static final Item wooden_boomerang = new Item(new QuiltItemSettings());
 }
-public class ThingsNStuffItems {
+public class ThingsNStuff {
     //Registers Items
     public static void register(ModContainer thingsnstuff) {
         Registry.register(registries.ITEM, new thingsnstuff:wooden_boomerang(mod.metadata))
@@ -16,13 +16,13 @@ public void setup(FMLClientSetupEvent event) {
         }
     });
 }
-public class ThingsNStuffItems implements ModInitializer {
+public class ThingsNStuff implements ModInitializer {
     @Override
     public void onInitialize(ModContainer thingsnstuff) {
         ThingsNStuffItems.register(thingsnstuff);
     }
 }
-public class ThingsNStuffItems {
+public class ThingsNStuff {
     public static void register(ModContainer thingsnstuff) {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.addItem(wooden_boomerang);
