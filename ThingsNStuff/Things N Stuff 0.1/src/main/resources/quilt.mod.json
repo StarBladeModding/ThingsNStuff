@@ -29,12 +29,12 @@
             },
             {
                 "id": "minecraft",
-                "versions": ">=1.20"
+                "versions": ">=1.20.1"
             }
         ]
     },
     "mixin": "thingsnstuff.mixins.json"
-}">=1.20"
+}">=1.20.1"
             }
         ]
     },
