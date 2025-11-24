@@ -1,0 +1,31 @@
+public class ThingsNStuffItems {
+    //Declares Wooden Boomerang Item
+    public static final Item wooden_boomerang = new Item(new QuiltItemSettings());
+}
+public class ThingsNStuffItems {
+    //Registers Items
+    public static void register(ModContainer thingsnstuff) {
+        Registry.register(registries.ITEM, new thingsnstuff:wooden_boomerang(mod.metadata))
+    }
+}
+public void setup(FMLClientSetupEvent event) {
+    RenderingRegistry.registerEntityRenderingHandler(MY_ITEM, (manager) -> new ItemRenderer(manager) {
+        @Override
+        public ResourceLocation getEntityTexture(Entity entity) {
+            return new ResourceLocation("my_mod:textures/item/my_texture.png");
+        }
+    });
+}
+public class ThingsNStuffItems implements ModInitializer {
+    @Override
+    public void onInitialize(ModContainer thingsnstuff) {
+        ThingsNStuffItems.register(thingsnstuff);
+    }
+}
+public class ThingsNStuffItems {
+    public static void register(ModContainer thingsnstuff) {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.addItem(wooden_boomerang);
+        });
+    }
+}

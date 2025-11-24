@@ -1,0 +1,42 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "thingsnstuff",
+        "version": "${version}",
+        "metadata": {
+            "name": "Things N Stuff",
+            "description": "1.20.1 mod to port features from future versions, add Dungeons weapons, enhance the End dimension and Whatever Else. Report bugs to dracozean@gmail.com",
+            "contributors": {
+                "StarBlade": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/example_mod/icon.png",
+            "license": "MIT"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "net.quiltmc.users.starblade.thingsnstuff.Thingsnstuff"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "thingsnstuff.mixins.json"
+}">=1.20"
+            }
+        ]
+    },
+    "mixin": "thingsnstuff.mixins.json"
+}
